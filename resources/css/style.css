@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.925);
+    font-family: 'Ubuntu', sans-serif;  
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+
+
+}
+
+
+.menu ul li {
+    list-style: none;
+    background: rgb(224, 210, 11);
+    display: inline-flex;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: all 0.3 ease 0s;
+    padding: 5px 15px;
+    margin-left: 0.3em;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;    
+    margin-right: 3px;
+}
+.menu ul li:hover{
+    background-color: black;
+    color: rgb(224, 210, 11);
+    cursor: pointer;
+
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 5px;
+}
+
+.scrlm {
+    display: flex;
+    justify-content: end;
+}
+
+.scrollmenu {
+    background-color: rgba(54, 54, 52, 0.904);;
+    position: absolute;
+    top: 80px;
+    width: 70%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+
+}
+
+
+.scrollmenu ul{
+    width: 95%;
+    height: 100%;
+}
+
+.scrollmenu ul li {
+    color:rgb(255, 255, 255);
+    text-align: right;
+    padding: 10px;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+.scrollmenu ul li:hover {
+    background-color:  rgb(224, 210, 11);
+    cursor: pointer;
+}
+
+#close {
+    display:none;
+}
+
+#loading {
+    background:#000 url(giphy.gif) no-repeat center ;
+    background-size: 18%;
+    z-index: 500;
+    width: 100%;
+    height: 100%;;
+    position: fixed;
+    display: block;
+}
+
+.conteiner {
+    font-family: 'Ubuntu', sans-serif;    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.932)
+
+}
+
+.product {
+    background-color:  rgb(224, 210, 11);
+    line-height: 1.3;
+    text-shadow: #000;
+    border-radius: 5px
+
+}
+.product h3 {
+    font-weight: 400;
+    opacity: 90%;
+}
+
+
+.product img {
+    width: 200px;
+    height: 200px;
+    border: 0.1px solid rgb(224, 210, 11);
+}
+
+.scroller {
+    display: flex;
+    overflow-x: auto;
+    padding-top: 0.5rem;
+    background-color:rgb(224, 210, 11);
+    border-top: 5px solid black;
+}
+.scrollproduct {
+    background-color: black;
+    margin-right: 15px;
+    color: white;
+    border-bottom: 1px solid rgb(224, 210, 11);
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.scrollproduct img {
+        width: 290px;
+        height: 300px;
+        border-radius: 4px;
+        border-bottom: 2px solid rgb(224, 210, 11);
+}
+
+.scrollproduct h3 {
+    font-weight: 250;
+}
+
+
+.scrollquotes {
+    display: grid;
+
+}
+
+.persons {
+    background-color: rgba(137, 43, 226, 0.363);
+    border-radius: 20px;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: top 15px right 40px;
+    background-size: 40px;
+    color:aliceblue;
+    text-shadow: 10px;
+    margin-top: 5px;
+
+}
+
+.names {
+    display: flex;
+align-items: center;
+}
+
+
+.names img {
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+h5 {
+    margin-left: 5px;
+    font-weight: 370;
+}
+
+.name p {
+    opacity: 85%;
+    font-weight: 250;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.quote p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    font-size: 13px;
+    opacity: 90%;
+}
+
+.second {
+    background-color: rgba(220, 220, 220, 0.76);
+    color: black;
+    text-shadow: 200px;
+}
+
+.second p {
+    opacity: 90%;
+}
+
+.fbbanner {
+    margin-top: 5px;
+    background-color: #4267b2d5;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.fbbanner h4 {
+    font-weight: 330;
+    color:rgb(255, 255, 255);
+    opacity: 95%;
+
+}
